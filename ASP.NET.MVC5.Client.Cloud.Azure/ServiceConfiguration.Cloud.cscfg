@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ASP.NET.MVC5.Client.Cloud.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="ASP.NET.MVC5.Client.Cloud">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="StaticContent.StorageConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="StaticContent.Container" value="static-content" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

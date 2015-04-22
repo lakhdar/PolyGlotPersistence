@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c18d5ceb-e3ca-4926-a861-99a1c27b655b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="853b1f07-bfc0-44a4-90d4-17f2f85b53cf" name="Presentation ">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b8456943-4a33-4312-b582-1d5c300751dd" direction="Forward">
+          <layerMoniker Id="13f23b36-3bea-43aa-84f9-b58058412e77" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="b4778979-832a-4e9f-85d0-ffae884f824d" name="ASP MVC5">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="85c9931f-8bf4-4e89-a2a3-a3667da388ed" direction="Forward">
+              <layerMoniker Id="463c5bcc-2b01-4074-a894-61269cafdaff" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="92bd490b-bb9e-4c42-8361-da779c64dabe" name="HTML5 angulatJS">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="83559506-c57c-4463-8680-0ab6b9a42090" direction="Forward">
+              <layerMoniker Id="b4778979-832a-4e9f-85d0-ffae884f824d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="0abe873e-d8d5-4961-8fec-dfd228173725" direction="Forward">
+              <layerMoniker Id="fca293ed-7723-4142-9b25-cab1f3e88f5a" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="cba76a1d-e95e-40d3-879e-96caeacfcccb" name="Dsitributed services">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="0e23b1dd-68a5-48c6-9dda-f786386fad99" direction="Forward">
+          <layerMoniker Id="1556705f-076f-423e-8d97-85aa21016d64" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="fca293ed-7723-4142-9b25-cab1f3e88f5a" name="ASP WebApi" />
+      </childLayers>
+    </layer>
+    <layer Id="463c5bcc-2b01-4074-a894-61269cafdaff" name="Application management">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b8e200fd-40e7-4fb4-a8c0-4c38aeb81ded" direction="Forward">
+          <layerMoniker Id="194a7dbf-529e-441f-bd5c-b69efee9f334" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ee73867f-ce51-42f6-a902-ecb8d5161eca" direction="Forward">
+          <layerMoniker Id="13f23b36-3bea-43aa-84f9-b58058412e77" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="1556705f-076f-423e-8d97-85aa21016d64" name="Management services" />
+      </childLayers>
+    </layer>
+    <layer Id="194a7dbf-529e-441f-bd5c-b69efee9f334" name="Domain objects">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="742e60aa-4306-430c-bf73-fb9ad269c8e9" direction="Forward">
+          <layerMoniker Id="13f23b36-3bea-43aa-84f9-b58058412e77" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="6e3c0d90-56a7-4ac6-8113-ef8c93f10894" name="Infrastructure data">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="8d12dcb0-1851-4758-93dc-34b7bafd997b" direction="Forward">
+          <layerMoniker Id="194a7dbf-529e-441f-bd5c-b69efee9f334" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="74014e1a-5dab-48a4-9619-f0ed6da15d17" direction="Forward">
+          <layerMoniker Id="13f23b36-3bea-43aa-84f9-b58058412e77" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="9fe9fef3-9264-4969-9171-3086dbef99b2" name="Repositories">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="911dbe76-6719-46e9-8695-c873b625ae68" direction="Forward">
+              <layerMoniker Id="f7703363-42b8-4f54-ae7e-cddf75f4a75a" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="f7703363-42b8-4f54-ae7e-cddf75f4a75a" name="Unit of Work">
+          <childLayers>
+            <layer Id="40294eb0-3de9-4fc8-b8b8-c9af2a5d4c99" name="SQL UoW">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="79322ef2-2ffe-447c-ab69-9173c591c758" direction="Forward">
+                  <layerMoniker Id="52f064a5-bf2b-41e1-b1d1-4bd7292a5bd4" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+            <layer Id="f22b80a5-a235-4f31-99a4-4c3563bc91de" name="Lucene UoW">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="e77c11b5-5e23-43dc-857b-686f3188cea3" direction="Forward">
+                  <layerMoniker Id="d7c9dc5e-2831-46c3-8d46-18503ee64501" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+            <layer Id="858c1b75-bc4a-4574-ae91-f4c731073ed7" name="MongoDb UoW">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="ca0c7350-a370-4e1a-bbc7-c56b767cc473" direction="Forward">
+                  <layerMoniker Id="0908feca-4905-49ee-bb26-e0fe219fac2d" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+            <layer Id="fd432b47-f4c8-45c5-be75-be70166ee182" name="Azure table  storage UoW">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="6c996add-45e7-4ef8-8fc2-962657645c80" direction="Forward">
+                  <layerMoniker Id="9cd61c72-1d28-47c0-a90d-97f14af5c2ef" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+            <layer Id="7a330c1b-30ed-4dbd-905f-3168e0d6de6d" name="In Memory UoW">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="6747dd2d-6a04-4942-bf9a-6118b8fb215e" direction="Forward">
+                  <layerMoniker Id="2b1c9d8d-3b69-4959-86ab-d05b431ea430" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="13f23b36-3bea-43aa-84f9-b58058412e77" name="Cross cutting ">
+      <childLayers>
+        <layer Id="dcb75399-3fa8-40b4-b41b-3dbde8c7e3e2" name="IoC" />
+        <layer Id="62cdfbd6-924c-40b9-86e4-b6e33090718f" name="Logging" />
+      </childLayers>
+    </layer>
+    <layer Id="52f064a5-bf2b-41e1-b1d1-4bd7292a5bd4" name="SQL DB" />
+    <layer Id="0908feca-4905-49ee-bb26-e0fe219fac2d" name="MongoDb" />
+    <layer Id="d7c9dc5e-2831-46c3-8d46-18503ee64501" name="Lucene index" />
+    <layer Id="9cd61c72-1d28-47c0-a90d-97f14af5c2ef" name="Azure Table " />
+    <layer Id="2b1c9d8d-3b69-4959-86ab-d05b431ea430" name="memory" />
+  </layers>
+</layerModel>

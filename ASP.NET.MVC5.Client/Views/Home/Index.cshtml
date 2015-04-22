@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1> PolyGlot Persistence Demo</h1>
+    <p class="lead"> Investigate on how the data access layer that can use several types of data-stores depending on the information, in a way that is transparent to the application</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Facilities In SQL server data store</h2>
+        <p>
+           in  Facilities we store not huge amount of a data and it  does not change frequentrly ,but we need security and normalized data 
+        </p>
+        <p>
+            @Html.ActionLink("View", "index", "Facility", null, new { @class = "btn btn-primary btn-lg " })
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Equipemnt in Lucene  data store</h2>
+        <p>there is huge amount of data accessed in different mode read write update , search and stats (more selective  and needs to filter records based on non-key fields)  </p>
+        <p>
+            @Html.ActionLink("View", "index", "Equipment", null, new { @class = "btn btn-primary btn-lg " })
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Departments in Mongo Data store </h2>
+        <p>not huge amount of data the add/update opeartions are less frequent oposit of  the read operations that are very frequents(more selective and needs to filter records based on non-key fields)  </p>
+        <p>
+            @Html.ActionLink("View", "index", "Department",null, new { @class = "btn btn-primary btn-lg " })
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2><del>Audit trial  in azure table key value store</del>  </h2>
+        <p>Huge amount of data used only for data manupulatin.opaque data items . </p>
+        <p><a class="btn btn-primary btn-lg" href="Facility/index">View &raquo;</a></p>
+    </div>
+</div>
+ 

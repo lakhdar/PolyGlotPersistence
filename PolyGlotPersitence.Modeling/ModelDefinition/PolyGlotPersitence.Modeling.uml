@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="77351255-e350-4ce4-9d67-a27699fce699"
+  name="PolyGlotPersitence.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="e4769742-1ea5-41dc-a4a5-b8952ed90a5f"
+        name="Presentation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="17f46414-e2a4-48ae-9caa-ed3818fc4d36">
+            <componentMoniker
+              Id="8107df61-5880-4723-a61a-8e9526a41e3e"
+              LastKnownName="Application Management"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="b8077fe5-dea7-4424-a709-6ceee85dcb11"
+            name="ASP MVC5"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="7fb65d87-5ce5-43fa-8114-ba67e6575aec"
+                LastKnownName="Component1"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="d4a162f0-9c09-43f6-bdb6-d3ab51fba50f"
+            name="HTML5 AngularJS"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="5f484877-3241-4e7c-b95d-881138b6b451"
+                LastKnownName="Component2"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7fb65d87-5ce5-43fa-8114-ba67e6575aec"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="97458563-dcbe-4ed2-ac40-b8837262c8bd"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="24ed13d8-99f2-4991-a935-6fad759f8485"
+                LastKnownName="HTTP"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5f484877-3241-4e7c-b95d-881138b6b451"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="d61e986a-3619-4ea5-bddb-886c48afb4d4"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="7f11e95b-c7d7-4850-a17a-cb55cf36f610"
+                LastKnownName="HTTP"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="12efcbf9-073f-4cbe-9b1a-673051678620"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0b012ba7-193f-42e8-94f8-0c1eac0cdd7f"
+                LastKnownName="HTTP"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="24ed13d8-99f2-4991-a935-6fad759f8485"
+        name="HTTP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7f11e95b-c7d7-4850-a17a-cb55cf36f610"
+        name="HTTP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="593e57c4-58dc-4e52-9a83-4c0b477c2892"
+        name="Web API"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="3069e0e3-6f34-4cd5-9187-99f83d05258a">
+            <componentMoniker
+              Id="8107df61-5880-4723-a61a-8e9526a41e3e"
+              LastKnownName="Application Management"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="55f61515-83b5-495c-90b5-e85a5cbc6558"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e70ac6be-f021-4241-a54c-73679aceb5a7"
+                LastKnownName="HTTP"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e70ac6be-f021-4241-a54c-73679aceb5a7"
+        name="HTTP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0b012ba7-193f-42e8-94f8-0c1eac0cdd7f"
+        name="HTTP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="8107df61-5880-4723-a61a-8e9526a41e3e"
+        name="Application Management"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b784de5a-67e2-4b97-9c35-20161cf689ca">
+            <componentMoniker
+              Id="1409ca4b-cb6d-45e0-a58d-5a03dc551ddd"
+              LastKnownName="Domain Objects"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1409ca4b-cb6d-45e0-a58d-5a03dc551ddd"
+        name="Domain Objects"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="365becd4-507b-43cd-91a0-98d2b65cc8c0"
+        name="Infrastructure Data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="56b15688-a4a8-4b48-96b1-b5e1bb12dfd0">
+            <componentMoniker
+              Id="1409ca4b-cb6d-45e0-a58d-5a03dc551ddd"
+              LastKnownName="Domain Objects"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="571a9bed-d8c3-45c1-9fa5-1a19a0fd903b">
+            <componentMoniker
+              Id="b70d49f6-f339-4549-bb3d-0e16c96b9f96"
+              LastKnownName="EF6"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="9c466ff7-3c6f-4841-a672-b6f254af4435">
+            <componentMoniker
+              Id="401f531f-33bd-45d5-8d07-a29c823c7036"
+              LastKnownName="mongocsharpdriver"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="d85bf7cc-5a5c-4085-9119-4122be624f5b">
+            <componentMoniker
+              Id="a631ee05-c21e-481c-9089-d56b5dbb624c"
+              LastKnownName="Azure graph APi"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+          <dependency
+            Id="02da07a6-8ccb-44c3-b1a5-d0b4874a4a2e">
+            <componentMoniker
+              Id="a3feb78e-74dc-42c0-9db1-060cc553db55"
+              LastKnownName="Lucen.net"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4957ec57-58b7-4a1b-af33-6d81738fffec"
+        name="SQL server"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="859a2462-9944-46c6-aefb-32ace4acbaf5"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f80d7fd6-83cb-48b8-b5a7-a9d0526b4854"
+                LastKnownName="ADO"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ca7bcea2-45e2-4c3b-8031-8b4ae4a01efd"
+        name="MongoDB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="01994965-b99a-4772-a052-563ed4861745"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="71302da4-4e92-4c96-b8d9-f97347736ab6"
+                LastKnownName="TCP"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="038a5a3a-90e6-41d5-b3cd-7d1edec19788"
+        name="Azure storage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="09a18e2b-7fc4-4268-b4b8-fd16e4700e4b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fe841717-4a79-4032-b69f-189d0e1e1eb7"
+                LastKnownName="HTTP/HTTPS"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f80d7fd6-83cb-48b8-b5a7-a9d0526b4854"
+        name="ADO"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4b14451a-c516-47a5-8b65-ee5304c915e1"
+        name="ADO"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="71302da4-4e92-4c96-b8d9-f97347736ab6"
+        name="TCP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="db0a6d5d-c226-4518-9681-c1f35e6b9bea"
+        name="TCP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fe841717-4a79-4032-b69f-189d0e1e1eb7"
+        name="HTTP/HTTPS"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a4b36549-fa41-41ce-93b5-2b5d34ccc609"
+        name="HTTP/HTTPS"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b70d49f6-f339-4549-bb3d-0e16c96b9f96"
+        name="EF6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="832f6a3b-a665-45a8-89fe-2474dbb04f1e"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="496a5532-e3a3-461a-8e9d-22c0b50b152d"
+                LastKnownName="ADO"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="401f531f-33bd-45d5-8d07-a29c823c7036"
+        name="mongocsharpdriver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="93fe746a-85c2-452d-897e-a28cdd5d8a5f"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f7cdb3d2-894a-4960-b751-53d4e8c52e25"
+                LastKnownName="TCP"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a631ee05-c21e-481c-9089-d56b5dbb624c"
+        name="Azure graph APi"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="88826d6d-0794-41c0-a8ef-82db07de3e42"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c35975c4-9627-4a10-a94d-b048d6d118c8"
+                LastKnownName="HTTP/HTTPS"
+                LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a3feb78e-74dc-42c0-9db1-060cc553db55"
+        name="Lucen.net"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c4f98bed-1f55-48d6-8394-c8349028edf8">
+            <componentMoniker
+              Id="d92bf45a-f923-4995-80f5-dad59636a0fb"
+              LastKnownName="Lucene"
+              LastKnownLocation="PolyGlotPersitence.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d92bf45a-f923-4995-80f5-dad59636a0fb"
+        name="Lucene"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="071a0005-8625-42e8-a652-cf47993a327a"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="496a5532-e3a3-461a-8e9d-22c0b50b152d"
+        name="ADO"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f7cdb3d2-894a-4960-b751-53d4e8c52e25"
+        name="TCP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c35975c4-9627-4a10-a94d-b048d6d118c8"
+        name="HTTP/HTTPS"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="36949554-5fba-448a-9177-dcf7504d452b"
+        name="Interface4"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

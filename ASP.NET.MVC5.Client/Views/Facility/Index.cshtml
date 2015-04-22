@@ -1,0 +1,34 @@
+﻿@model ASP.NET.MVC5.Client.Models.FacilityListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Facilities</h2>
+@Html.ActionLink("Create", "Create", "facility", new { @class = "btn btn-primary btn-lg pull-right",id="facilityCreate" })
+<p><strong>Total : </strong>@Model.Total</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Facility Name</th>
+            <th>Facility Address</th>
+            <th>Facility City</th>
+            <th>Facility Zip code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var f in @Model.Facilities)
+        {
+            <tr>
+                <th scope="row">@f.Id</th>
+                <td>@f.Name</td>
+                <td>@f.Address</td>
+                <td>@f.City</td>
+                <td>@f.ZipCode</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+

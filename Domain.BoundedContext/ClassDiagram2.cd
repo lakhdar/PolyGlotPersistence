@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Department&#xD;&#xA;Stored in Mongo data base &#xD;&#xA;associated with facility(organization) by facilityId (GUID Key)">
+    <Position X="6.208" Y="3.031" Height="1.177" Width="1.752" />
+  </Comment>
+  <Comment CommentText="Equipment&#xD;&#xA;Stored in Lucene index store&#xD;&#xA;associated with department(organization) by departmentId (GUID Key)">
+    <Position X="9.094" Y="4.427" Height="1.042" Width="1.773" />
+  </Comment>
+  <Comment CommentText="Organization(Facility)&#xD;&#xA;Stored in  SQL server &#xD;&#xA;associated with Customer by CustomerId (GUID Key)">
+    <Position X="3.333" Y="1.75" Height="1.177" Width="1.783" />
+  </Comment>
+  <Comment CommentText="Customer (tenant) (Facility)&#xD;&#xA;Stored in  SQL server &#xD;&#xA;associated with Customer by CustomerId (GUID Key)">
+    <Position X="0.677" Y="1.031" Height="1.177" Width="1.7" />
+  </Comment>
+  <Class Name="Domain.BoundedContext.ERPModule.Organization">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAAAAACAAAAQAAAAAABACAAAAAAAAAAA=</HashCode>
+      <FileName>ERPModule\Organization\Organization.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.BoundedContext.ERPModule.Department">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Organization" Type="Domain.BoundedContext.ERPModule.Organization" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="5.155" />
+        <Point X="5.875" Y="5.155" />
+        <Point X="5.875" Y="4.25" />
+        <Point X="5" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAQACQAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>ERPModule\Department\Department.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Organization" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.BoundedContext.StoreModule.EquipmentAggregate">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAIAAAAAAAQAEAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>StoreModule\Equipment\EquipmentAggregate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Department" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.BoundedContext.ERPModule.DepartmentAggregate">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAIAAAAAAAQAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ERPModule\Department\DepartmentAggregate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.BoundedContext.ERPModule.Customer">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQAAACAAAABAEAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>ERPModule\Customer\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
